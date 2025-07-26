@@ -1,0 +1,18 @@
+[
+  {
+    "model": "app.project",
+    "pk": 1,
+    "fields": {
+      "title": "Backend Development",
+      "description": "Details Backend REST APIs development using Node.js, Java, express etc."
+    }
+  },
+  {
+    "model": "app.project",
+    "pk": 2,
+    "fields": {
+      "title": "Design UI/UX",
+      "description": "React, HTML, CSS, Bootstrap, Tailwind CSS, AJAX, C#, Python, Qt and etc required."
+    }
+  }
+]

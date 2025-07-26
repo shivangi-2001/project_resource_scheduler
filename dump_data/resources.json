@@ -4,12 +4,14 @@
     "pk": 1,
     "fields": {
       "name": "Eddard (Ned) Stark",
-      "available_start_date": "2025-07-08",
-      "available_end_date": "2025-07-25",
+      "available_start_date": "2025-07-01",
+      "available_end_date": "2025-07-10",
       "skills": [
         2,
-        4,
-        7
+        33,
+        7,
+        17,
+        50
       ]
     }
   },
@@ -18,12 +20,20 @@
     "pk": 2,
     "fields": {
       "name": "Arya Stark",
-      "available_start_date": "2025-06-17",
-      "available_end_date": "2025-07-25",
+      "available_start_date": "2025-07-03",
+      "available_end_date": "2025-07-16",
       "skills": [
+        1,
+        2,
         4,
         7,
         8,
+        23,
+        11,
+        31,
+        20,
+        30,
+        41,
         48
       ]
     }
@@ -33,14 +43,20 @@
     "pk": 3,
     "fields": {
       "name": "Tyrion Lannister",
-      "available_start_date": "2025-08-12",
-      "available_end_date": "2025-09-13",
+      "available_start_date": "2025-07-20",
+      "available_end_date": "2025-07-25",
       "skills": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        7,
         10,
         11,
         12,
-        13,
-        14
+        33,
+        44
       ]
     }
   },
@@ -49,9 +65,16 @@
     "pk": 4,
     "fields": {
       "name": "Robert Baratheon",
-      "available_start_date": "2025-08-12",
-      "available_end_date": "2025-09-13",
+      "available_start_date": "2025-07-12",
+      "available_end_date": "2025-07-30",
       "skills": [
+        2,
+        3,
+        47,
+        42,
+        22,
+        12,
+        8,
         15,
         16,
         17
@@ -63,8 +86,8 @@
     "pk": 5,
     "fields": {
       "name": "Daenerys Targaryen",
-      "available_start_date": "2025-08-15",
-      "available_end_date": "2025-08-23",
+      "available_start_date": "2025-07-13",
+      "available_end_date": "2025-07-18",
       "skills": [
         20,
         21,
@@ -83,7 +106,7 @@
     "fields": {
       "name": "Bran Stark",
       "available_start_date": "2025-07-17",
-      "available_end_date": "2025-07-25",
+      "available_end_date": "2025-07-28",
       "skills": [
         26,
         27,
@@ -100,19 +123,16 @@
     "pk": 7,
     "fields": {
       "name": "Cersei Lannister",
-      "available_start_date": "2025-07-01",
-      "available_end_date": "2025-07-31",
+      "available_start_date": "2025-07-02",
+      "available_end_date": "2025-07-8",
       "skills": [
         3,
-        5,
         6,
         25,
         28,
-        45,
-        46,
-        47,
+        15,
         48,
-        49,
+        9,
         50
       ]
     }
@@ -122,17 +142,15 @@
     "pk": 8,
     "fields": {
       "name": "Jon Snow",
-      "available_start_date": "2025-08-01",
-      "available_end_date": "2025-08-16",
+      "available_start_date": "2025-07-10",
+      "available_end_date": "2025-07-15",
       "skills": [
         3,
-        5,
+        15,
         7,
         17,
         19,
         21,
-        45,
-        46,
         49,
         50
       ]
@@ -143,18 +161,18 @@
     "pk": 9,
     "fields": {
       "name": "Catelyn Stark",
-      "available_start_date": "2025-08-15",
-      "available_end_date": "2025-08-23",
+      "available_start_date": "2025-07-15",
+      "available_end_date": "2025-07-20",
       "skills": [
         5,
         32,
-        33,
+        3,
         34,
-        35,
+        28,
         37,
         44,
         46,
-        48,
+        15,
         50
       ]
     }
@@ -180,11 +198,11 @@
         28,
         32,
         33,
-        34,
         35,
         36,
         41,
         43,
+        44,
         45,
         50
       ]
