@@ -60,6 +60,9 @@ python manage.py loaddata dump_data/tasks.json
 
 ## Sequence/Interaction Diagram
 
+---
+
+![ER-DIAGRAM](images/er-diagram.png)
 
 ## Database Design
 
