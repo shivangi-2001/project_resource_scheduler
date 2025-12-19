@@ -89,10 +89,17 @@ class AssignmentSerializer(serializers.ModelSerializer):
         task = validated_data['task']
         resource = validated_data['resource']
 
+        # check availability of resources with task
+        if not (resource.available_start_date <= task.start_date and resource.available_end_date >= task.end_date):
+            raise serializers.ValidationError("Resource is not available for the entire duration of the task.")
+
         # Get skills
         task_skills = set(task.skills.all())
         resource_skills = set(resource.skills.all())
         matching_skills = task_skills & resource_skills
+
+        if len(matching_skills) == 0:
+            raise serializers.ValidationError("No matching skills found.")
 
         # Calculate percentage of matching skills
         if task_skills:

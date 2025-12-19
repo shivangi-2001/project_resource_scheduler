@@ -55,15 +55,7 @@ def getAvailability(request):
         remaining_skills = required_skills - set(assigned_skills)
 
     # 4. Search available resources that match remaining skills
-    available_resources = Resources.objects.exclude(
-        id__in=assigned_resources
-    ).filter(
-        available_start_date__lte=task.start_date,
-        available_end_date__gte=task.end_date,
-        skills__name__in=remaining_skills
-    ).annotate(
-        matching_count=Count('skills', filter=Q(skills__name__in=remaining_skills))
-    ).distinct().order_by('-matching_count')
+    available_resources = Resources.objects.exclude(id__in=assigned_resources).filter(available_start_date__lte=task.start_date, available_end_date__gte=task.end_date, skills__name__in=remaining_skills).annotate(matching_count=Count('skills', filter=Q(skills__name__in=remaining_skills))).distinct().order_by('-matching_count')
 
     # 5. Prepare response list
     person_list = []
